@@ -71,3 +71,44 @@ nav ul a {
         margin-bottom: 0;
     }
 }
+
+/* Nav with icons */
+.icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons ul li {
+    flex: 0 0 100%;
+    display: flex;
+}
+
+@media (min-width:480px) {
+    .icons ul li {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width:768px) {
+    .icons ul li {
+        flex: 0 0 25%;
+    }
+}
+
+.icons ul li a {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+}
+
+.icons .icon {
+    font-size: 2rem;
+    flex: 0 0 3rem;
+}
+
+.icons .text span {
+    font-size: .8rem;
+    display: block;
+    margin-top: .5rem;
+}
