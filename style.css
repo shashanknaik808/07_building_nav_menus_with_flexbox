@@ -174,6 +174,8 @@ nav ul a {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 auto;
+    justify-content: flex-end;
+
 }
 
 .social-menu ul li {
@@ -203,4 +205,49 @@ nav ul a {
 
 .social-menu ul li a[href*='pinterest.com']::before {
     content: "\f231 ";
+}
+
+/* Navigation Social Dropdown */
+.navigation-social-dropdown {
+    background-color: #3F51B5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation-social-dropdown .dropdown ul li {
+    flex: 1 0 auto;
+}
+
+.navigation-social-dropdown .dropdown {
+    flex: 0 0 100%;
+}
+
+.navigation-social-dropdown .social-menu {
+    order: -1;
+    flex: 0 0 100%;
+}
+
+.navigation-social-dropdown .social-menu ul {
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+    .navigation-social-dropdown .dropdown ul li {
+        flex: 1 0 auto;
+    }
+
+    .navigation-social-dropdown .dropdown {
+        flex: 1 0 auto;
+    }
+
+    .navigation-social-dropdown .social-menu {
+        order: unset;
+        flex: 1 0 auto;
+    }
+
+    .navigation-social-dropdown .social-menu ul {
+        justify-content: flex end;
+    }
 }
